@@ -1,0 +1,18 @@
+{{!-- app/view/news/list.hbs --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的列表页</title>
+</head>
+<body>
+    <ul>
+        {{#each list}}
+            <li>
+                <a href="{{this.url}}">{{this.title}}</a>
+            </li>
+        {{/each}}
+    </ul>
+</body>
+</html>
