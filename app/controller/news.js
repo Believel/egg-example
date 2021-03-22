@@ -14,6 +14,8 @@ class NewsController extends Controller {
 
         // !从服务器中获取数据
         const ctx = this.ctx;
+        // ctx.request.query 等价 ctx.query
+        // ctx.response.body 等价 ctx.body 
         const page = ctx.query.page || 1;
         const newsList = await ctx.service.news.list(page);
         await ctx.render('news/list.hbs', { list: newsList});
