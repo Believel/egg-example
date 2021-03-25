@@ -34,6 +34,11 @@ module.exports = appInfo => {
     pageSize: 5,
     serverUrl: 'https://hacker-news.firebaseio.com/v0'
   }
+  // 调整 bodyParser 的参数配置
+  // config.bodyParser = {
+  //   jsonLimit: "1mb",
+  //   formLimit: "1mb"
+  // }
 
   return {
     ...config,
