@@ -27,13 +27,13 @@ module.exports = appInfo => {
     defaultViewEngine: 'handlebars',
     defaultExtension: '.hbs',
     mapping: {
-      '.hbs': 'handlebars'
-    }
-  }
+      '.hbs': 'handlebars',
+    },
+  };
   config.news = {
     pageSize: 5,
-    serverUrl: 'https://hacker-news.firebaseio.com/v0'
-  }
+    serverUrl: 'https://hacker-news.firebaseio.com/v0',
+  };
   // 调整 bodyParser 的参数配置
   // config.bodyParser = {
   //   jsonLimit: "1mb",
